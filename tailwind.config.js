@@ -12,7 +12,7 @@ export default  {
         "primary-300": "#FFA6A3",
         "primary-500": "#FF6B66",
         "secondary-400": "#FFCD5B",
-        "secondary-500": "#FFC132",
+        "secondary-500": "#FF9F32",
       },
       backgroundImage: (theme) => ({
         "gradient-yellowred":
