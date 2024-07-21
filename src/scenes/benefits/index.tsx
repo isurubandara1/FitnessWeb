@@ -10,27 +10,29 @@ import { motion } from "framer-motion";
 import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
 import Benefit from "./Benefit";
 
+// List of benefits
 const benefits: Array<BenefitType> = [
   {
     icon: <HomeModernIcon className="h-6 w-6" />,
     title: "State of the Art Facilities",
     description:
-      "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
+      "Experience modern, state-of-the-art facilities that offer top-quality equipment and amenities to support your fitness journey.",
   },
   {
     icon: <UserGroupIcon className="h-6 w-6" />,
     title: "100's of Diverse Classes",
     description:
-      "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id.",
+      "Join a wide variety of classes that cater to all fitness levels and interests, ensuring there's something for everyone.",
   },
   {
     icon: <AcademicCapIcon className="h-6 w-6" />,
     title: "Expert and Pro Trainers",
     description:
-      "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
+      "Benefit from the guidance and expertise of our professional trainers who are dedicated to helping you achieve your fitness goals.",
   },
 ];
 
+// Motion container variants
 const container = {
   hidden: {},
   visible: {
@@ -38,17 +40,19 @@ const container = {
   },
 };
 
+// Props type
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
+// Benefits component
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
     <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
       >
-        {/* HEADER */}
+        {/* Header */}
         <motion.div
           className="md:my-5 md:w-3/5"
           initial="hidden"
@@ -62,13 +66,11 @@ const Benefits = ({ setSelectedPage }: Props) => {
         >
           <HText>MORE THAN JUST GYM.</HText>
           <p className="my-5 text-sm">
-            We provide world class fitness equipment, trainers and classes to
-            get you to your ultimate fitness goals with ease. We provide true
-            care into each and every member.
+            We provide world-class fitness equipment, trainers, and classes to help you achieve your ultimate fitness goals with ease. We genuinely care for each and every member.
           </p>
         </motion.div>
 
-        {/* BENEFITS */}
+        {/* Benefits */}
         <motion.div
           className="mt-5 items-center justify-between gap-8 md:flex"
           initial="hidden"
@@ -87,18 +89,18 @@ const Benefits = ({ setSelectedPage }: Props) => {
           ))}
         </motion.div>
 
-        {/* GRAPHICS AND DESCRIPTION */}
+        {/* Graphics and Description */}
         <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
-          {/* GRAPHIC */}
+          {/* Graphic */}
           <img
             className="mx-auto"
             alt="benefits-page-graphic"
             src={BenefitsPageGraphic}
           />
 
-          {/* DESCRIPTION */}
+          {/* Description */}
           <div>
-            {/* TITLE */}
+            {/* Title */}
             <div className="relative">
               <div className="before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
                 <motion.div
@@ -119,7 +121,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
               </div>
             </div>
 
-            {/* DESCRIPT */}
+            {/* Description */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -131,22 +133,14 @@ const Benefits = ({ setSelectedPage }: Props) => {
               }}
             >
               <p className="my-5">
-                Nascetur aenean massa auctor tincidunt. Iaculis potenti amet
-                egestas ultrices consectetur adipiscing ultricies enim. Pulvinar
-                fames vitae vitae quis. Quis amet vulputate tincidunt at in
-                nulla nec. Consequat sed facilisis dui sit egestas ultrices
-                tellus. Ullamcorper arcu id pretium sapien proin integer nisl.
-                Felis orci diam odio.
+                Our community of members is achieving their fitness goals and living healthier, happier lives. Join us and become a part of this thriving community.
               </p>
               <p className="mb-5">
-                Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-                tellus quam porttitor. Mauris velit euismod elementum arcu neque
-                facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-                enim mattis odio in risus nunc.
+                We offer a supportive environment with expert guidance and a variety of resources to help you succeed in your fitness journey. Whether you're a beginner or an experienced athlete, you'll find the support you need here.
               </p>
             </motion.div>
 
-            {/* BUTTON */}
+            {/* Button */}
             <div className="relative mt-16">
               <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
                 <ActionButton setSelectedPage={setSelectedPage}>
