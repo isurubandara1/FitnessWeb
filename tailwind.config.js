@@ -4,13 +4,13 @@ export default  {
   theme: {
     extend: {
       colors: {
-        "gray-20": "#2E2929", 
-        "gray-50": "#2E2929",
-        "gray-100": "#2E2929",
-        "gray-500": "#2E2929",
-        "primary-100": "#F1E7E7",
-        "primary-300": "#FCF8F8",
-        "primary-500": "#FFCD5B",
+        "gray-20": "#F8F4EB",
+        "gray-50": "#EFE6E6",
+        "gray-100": "#DFCCCC",
+        "gray-500": "#5E0000",
+        "primary-100": "#FFE1E0",
+        "primary-300": "#FFA6A3",
+        "primary-500": "#F55C57",
         "secondary-400": "#FFCD5B",
         "secondary-500": "#FF9F32",
       },
