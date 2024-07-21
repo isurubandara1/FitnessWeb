@@ -8,37 +8,43 @@ import image6 from "@/assets/image6.png";
 import { motion } from "framer-motion";
 import HText from "@/shared/HText";
 import Class from "./Class";
+
+// Array of classes with descriptions and images
 const classes: Array<ClassType> = [
   {
     name: "Weight Training Classes",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Our weight training classes are designed to help you build strength and muscle. Whether you are a beginner or an experienced lifter, our classes offer something for everyone.",
     image: image1,
   },
   {
     name: "Yoga Classes",
+    description:
+      "Join our yoga classes to improve flexibility, balance, and mental clarity. Our sessions cater to all levels, from beginners to advanced practitioners.",
     image: image2,
   },
   {
     name: "Ab Core Classes",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Focus on your core strength with our ab core classes. These sessions are tailored to target your abdominal muscles, ensuring a strong and stable core.",
     image: image3,
   },
   {
     name: "Adventure Classes",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Experience the thrill of adventure with our unique adventure classes. These sessions combine fitness with fun activities, perfect for those looking for an exciting workout.",
     image: image4,
   },
   {
     name: "Fitness Classes",
+    description:
+      "Our fitness classes offer a comprehensive workout that includes cardio, strength training, and flexibility exercises. Suitable for all fitness levels.",
     image: image5,
   },
   {
     name: "Training Classes",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Get professional guidance in our training classes. These sessions are designed to help you achieve your specific fitness goals with personalized coaching.",
     image: image6,
   },
 ];
@@ -67,10 +73,10 @@ const OurClasses = ({ setSelectedPage }: Props) => {
           <div className="md:w-3/5">
             <HText>OUR CLASSES</HText>
             <p className="py-5">
-              Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-              tellus quam porttitor. Mauris velit euismod elementum arcu neque
-              facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-              enim mattis odio in risus nunc.
+              Explore our diverse range of classes that cater to all fitness
+              levels and interests. Whether you're looking to build strength,
+              improve flexibility, or enjoy an adventurous workout, we have
+              something for you.
             </p>
           </div>
         </motion.div>
@@ -90,4 +96,5 @@ const OurClasses = ({ setSelectedPage }: Props) => {
     </section>
   );
 };
+
 export default OurClasses;
