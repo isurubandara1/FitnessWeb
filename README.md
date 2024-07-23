@@ -1,6 +1,6 @@
 # Fitness Web App
 
-Welcome to the Fitness Web App repository! This project is a modern, responsive web application designed to help users track and manage their fitness routines. Built with React, Vite, Tailwind CSS, and TypeScript, this app provides a seamless and efficient user experience.
+Welcome to the Fitness Web App repository! This project is a modern, responsive web application designed to help users track and manage their fitness routines. Built with React, Vite, CSS, and TypeScript, this app provides a seamless and efficient user experience.
 
 ## Technologies Used
 
