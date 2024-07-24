@@ -5,7 +5,7 @@ Welcome to the Fitness Web App repository! This project is a modern, responsive 
 ## Technologies Used
 
 - **React**: A JavaScript library for building user interfaces.
-- **Vite**: A build tool that provides a faster and leaner development experience for modern web projects.
+- **Vite**: A build tool that provides a faster and leaner development experience for web projects.
 - **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
 - **TypeScript**: A strongly typed programming language that builds on JavaScript.
 
